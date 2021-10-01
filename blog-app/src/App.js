@@ -198,8 +198,10 @@ export default class App extends Component {
         maxSize: 10,
       },
       () => {
-        const searchedData = this.state.unChangedData.filter((item) =>
-          item.title.toLowerCase().includes(searchKey) || item.body.toLowerCase().includes(searchKey)
+        const searchedData = this.state.unChangedData.filter(
+          (item) =>
+            item.title.toLowerCase().includes(searchKey) ||
+            item.body.toLowerCase().includes(searchKey)
         );
         this.setState(
           {
@@ -319,7 +321,7 @@ export default class App extends Component {
                 </button>
               }
             </div>
-          )}       
+          )}
         </main>
         <Footer />
       </div>
