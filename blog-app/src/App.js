@@ -199,7 +199,7 @@ export default class App extends Component {
       },
       () => {
         const searchedData = this.state.unChangedData.filter((item) =>
-          item.title.includes(searchKey)
+          item.title.toLowerCase().includes(searchKey) || item.body.toLowerCase().includes(searchKey)
         );
         this.setState(
           {
@@ -219,7 +219,6 @@ export default class App extends Component {
       }
     );
   };
-
   render() {
     return (
       <div className="wrapper">
@@ -320,7 +319,7 @@ export default class App extends Component {
                 </button>
               }
             </div>
-          )}
+          )}       
         </main>
         <Footer />
       </div>

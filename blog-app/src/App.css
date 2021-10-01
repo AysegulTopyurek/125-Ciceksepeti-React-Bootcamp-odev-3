@@ -278,6 +278,17 @@ footer {
   background-color: black;
   color: pink;
 }
+.reload {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em;
+}
+.reload button {
+  background: transparent;
+  color: pink;
+  font-size: 2em;
+  border: 1px solid rebeccapurple;
+}
 
 @media (max-width: 1000px) {
   .mainFooterMessage,
