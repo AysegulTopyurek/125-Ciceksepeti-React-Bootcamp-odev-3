@@ -1,0 +1,306 @@
+:root {
+  --primary: pink;
+  --secondary: skyblue;
+  --soft: #eec390;
+  --shadow: #0364cc88;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 1em 6em;
+  height: 650px;
+  color: #fff;
+  text-shadow: 0 0 3px var(--secondary);
+  background-image: url("https://cdn.getyourguide.com/img/location/5c8fb555c67bc.jpeg/88.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(45deg, skyblue, transparent);
+  opacity: 0.9;
+  z-index: 0;
+}
+
+header h1 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  font-size: 4em;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(-45deg, #ffffff78, transparent);
+  padding: 0.4em 1em;
+  border-radius: 10px;
+}
+
+.search {
+  display: flex;
+  column-gap: 0.2em;
+}
+
+.search * {
+  background: transparent;
+  border: 1px solid deeppink;
+  padding: 0.4em;
+  border-radius: 4px;
+}
+
+.search input:active {
+  outline: 1px solid skyblue;
+}
+
+header .links,
+.socialMedia {
+  display: flex;
+  gap: 1em;
+}
+
+.socialMedia a {
+  color: pink;
+  font-size: 1.6em;
+}
+
+.hi {
+  text-shadow: 2px 2px 5px var(--shadow);
+  color: #fff;
+}
+
+.logo h4,
+.logo h5 {
+  margin: 0;
+}
+
+.logo {
+  text-align: right;
+  font-size: 1.1em;
+}
+
+.blog {
+  display: grid;
+  transform: translateY(-100px);
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  padding: 0 6em;
+}
+
+.posts {
+  box-shadow: 0px 0px 4px skyblue;
+  padding: 1em;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+
+.posts .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.posts:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s;
+}
+
+.posts img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: auto;
+}
+.btnSet {
+  display: flex;
+  justify-content: space-between;
+}
+.deleteButton,
+.editButton {
+  background: transparent;
+  border: 1px solid lightgray;
+}
+.ri-delete-bin-fill,
+.ri-edit-2-fill {
+  color: pink;
+  font-size: 1.5em;
+}
+
+.popupSuccess .modal {
+  background-image: url("./assets/success.webp");
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 1em;
+}
+.popupError .modal {
+  background-image: url("./assets/error.webp");
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 1em;
+}
+
+.modalWrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #00000087;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 3em;
+  position: relative;
+  width: 500px;
+  background-image: url("./assets/rainbow.jpeg");
+  background-blend-mode: darken;
+  background-size: cover;
+  border-radius: 1em;
+}
+
+.modalHeader .close {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.modal input,
+.modal textarea {
+  padding: 0.4em;
+  border: 1px solid pink;
+  display: block;
+  width: 100%;
+  background-color: #f4f4f4;
+  font-size: 20px;
+  border-radius: 0.5em;
+}
+
+.modal .label {
+  margin-top: 1.5em;
+  margin-bottom: 0.2em;
+  font-size: 1.1em;
+}
+
+.modal h3 {
+  text-align: right;
+}
+
+.modal button {
+  padding: 0.5em;
+  border: 2px solid pink;
+  background-color: pink;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.loadMore {
+  background: transparent;
+  padding: 0.6em 1.6em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  border: 1px solid lightpink;
+  border-radius: 1em;
+  box-shadow: 0 0 4px pink;
+  color: rebeccapurple;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
+  transition: all 0.2s;
+}
+
+.loadMore:hover {
+  transform: translate(2px, -2px);
+  transition: all 0.2s;
+}
+footer {
+  background: #6633995c;
+  text-align: center;
+  padding: 2em;
+  padding-bottom: 2em;
+}
+.footerTitle h2 {
+  color: #fff;
+  font-size: 2em;
+}
+.mainFooterMessage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
+
+.mainFooterMessage div {
+  box-shadow: 0 0 1px var(--shadow);
+  padding: 1em;
+  transition: all 0.2s;
+}
+
+.mainFooterMessage div:hover {
+  box-shadow: 2px 2px 8px #eee;
+  transform: translate(-2px, -2px);
+  transition: all 0.2s;
+}
+
+.mainFooterMessage h3 {
+  color: #1d2023;
+}
+
+::selection {
+  background-color: black;
+  color: pink;
+}
+
+@media (max-width: 1000px) {
+  .mainFooterMessage,
+  .blog {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  header,
+  .blog {
+    padding: 1em;
+  }
+  header nav,
+  header nav ul {
+    display: grid;
+    place-items: center;
+  }
+  .mainFooterMessage,
+  .blog {
+    grid-template-columns: 1fr;
+  }
+  .modal {
+    margin: 0 1em;
+  }
+}
