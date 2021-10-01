@@ -2,7 +2,7 @@
 
 Bu repoda gördüğünüz proje aslında uzun zamandır aklımda olan kişisel blog yapımın başlangıcıdır. Çok özenerek ve itina ile hazırladım. Umarım beğenirsiniz.
 
-[LIVE](https://youthful-wozniak-490873.netlify.app/)
+[LIVE](https://romantic-keller-3eec6d.netlify.app/)
 
 ## Installation
 
